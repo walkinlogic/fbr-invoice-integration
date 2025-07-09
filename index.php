@@ -1,8 +1,20 @@
 <?php
+// LIVE
+$fbrUrl = "https://gw.fbr.gov.pk/imsp/v1/api/Live/PostData";
 
+//SANDBOX	
 $url = "https://esp.fbr.gov.pk:8244/FBR/v1/api/Live/PostData";
 $token = "Bearer 1298b5eb-b252-3d97-8622-a4a69d5bf818"; // Replace with your sandbox token
+ 
 
+ $PaymentMode=1; // PaymentMode Cash
+ $PaymentMode=2; // PaymentMode Debit Card / Credit Card
+ $PaymentMode=5; // PaymentMode Mixed
+ 
+ $InvoiceType =3; // Sale return
+ $InvoiceType =1; // Sale Invoice 
+ 
+ 
 $data = [
     'InvoiceNumber' => '123456',
     'POSID' => '814989',
